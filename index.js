@@ -177,7 +177,7 @@ async function fetchMessages() {
     });
 
     console.log("📥 Fetched messages:", messages);
-    startAutoShow(); // ✅ Chỉ gọi khi đã có dữ liệu
+    startAutoShow();
   } catch (err) {
     console.error("❌ Lỗi khi lấy dữ liệu:", err);
   }
@@ -186,7 +186,7 @@ async function fetchMessages() {
 // Khởi tạo khi load trang
 window.addEventListener("load", () => {
   console.log("🎉 Trang đã load xong");
-  fetchMessages(); // Gọi hàm load dữ liệu
+  fetchMessages();
 });
 
 // CountDown đếm ngược thời gian
